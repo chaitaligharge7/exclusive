@@ -1,0 +1,66 @@
+<div class="row main">
+    <div class="col-md-8 left">
+      <img src="assets/first.png" />
+    </div>
+
+
+
+    <div class="col-md-4 right">
+
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+      <h2>Login in to Exclusive</h2>
+
+      <h6>Enter your details below</h6>
+
+      <div>
+        <input type="text"               formControlName="username"
+        placeholder="Username" />
+      </div>
+      <div
+        *ngIf="
+          loginForm.get('username')?.invalid &&
+          loginForm.get('username')?.touched
+        "
+        class="error"
+      >
+      email is required.
+      </div>
+
+      <div>
+        <input type="password"               formControlName="password"
+        placeholder="password" />
+      </div>
+
+      <div
+        *ngIf="
+          loginForm.get('password')?.invalid &&
+          loginForm.get('password')?.touched
+        "
+        class="error"
+   
+      >
+        <div *ngIf="loginForm.get('password')?.errors?.['required']">
+          Password is required.
+        </div>
+        <div *ngIf="loginForm.get('password')?.errors?.['minlength']">
+          Password must be at least 6 characters.
+        </div>
+      </div>
+
+      <div *ngIf="successMessage">
+        <h3>{{ successMessage }}</h3>
+      </div>
+
+
+      <p *ngIf="errorMessage">{{ errorMessage }}</p>
+
+      <div class="last">
+        <button type="submit" class="btn btn-outline-primary">Login</button>
+
+        <a   [routerLink]="['/home/forgotpass']"> Forgot password? </a>
+      </div>
+
+      </form>
+    </div>
+</div>

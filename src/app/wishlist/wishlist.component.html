@@ -1,0 +1,78 @@
+<div class="main-container">
+  <div class="row">
+    <div class="first-part">
+      <h5>Wishlist(4)</h5>
+      <button>Move All To bag</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row card-container">
+      <div class="product-card col-md-3" *ngFor="let a1 of newArray"
+      
+      (click)="viewProductDetail(a1.id)"
+      >
+        <div class="image-wrapper">
+          <img
+            class="product-image"
+            [alt]="a1.title"
+            [src]="a1.thumbnail"
+          />
+
+          <span class="delete-icon material-icons" >delete</span>
+        </div>
+        <div class="card-content">
+          <h4 class="product-title">{{ a1.title }}</h4>
+          <p class="product-price">${{ a1.price }}</p>
+        </div>
+        <button
+        class="add-to-cart-button"
+        (click)="addToCart(a1.id, 1)"
+      >
+        Add to Cart
+      </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="third">
+      <div class="exe1">
+        <div class="dark-rectangle"></div>
+
+        <h5>Just For You</h5>
+      </div>
+      <button   (click)="SeeAll()">See All</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row card-container">
+      <div class="product-card col-md-3" *ngFor="let a1 of ShowAllProduct"
+      
+      (click)="viewProductDetail(a1.id)"
+      >
+        <div class="image-wrapper">
+          <img
+            class="product-image"
+            [alt]="a1.title"
+            [src]="a1.thumbnail"
+          />
+
+
+        </div>
+        <div class="card-content">
+          <h4 class="product-title">{{ a1.title }}</h4>
+          <p class="product-price">${{ a1.price }}</p>
+        </div>
+        <button
+        class="add-to-cart-button"
+        (click)="addToCart(a1.id, 1)"
+      >
+        Add to Cart
+      </button>
+      </div>
+    </div>    <!-- <div class="col-md-3">2</div>
+    <div class="col-md-3">3</div>
+    <div class="col-md-3">4</div> -->
+  </div>
+</div>

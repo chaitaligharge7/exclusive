@@ -1,0 +1,244 @@
+.exe1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* padding: 10px; */
+  /* align-items: center;
+  align-items: center; */
+  justify-content: center;
+  justify-content: center;
+}
+
+.dark-rectangle {
+  width: 70px; /* Width of the rectangle */
+  height: 50px; /* Height of the rectangle */
+  background-color: rgb(248, 241, 241); /* Dark fill */
+  display: inline-block; /* Keeps it inline */
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.row_Sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 20px; */
+  /* border-color: black; */
+
+  box-shadow: 0 1px 1px rgba(113, 110, 110, 0.3);
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.first {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abc {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+.sec_first{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+/* 
+ 
+.col-first{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: baseline;
+    gap:800px;
+}
+
+
+
+
+/* 
+      .image-wrapper {
+        position: relative;
+      } */
+/* .row-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+} */
+
+.sec_second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(247, 233, 233);
+  padding-bottom: 20px;
+}
+
+.product-image {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  background-color: white;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.column3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.column4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+
+  /* gap:850px; */
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.btn.btn-outline-primary {
+  border-radius: 4px; /* Example: custom border radius */
+  background-color: white; /* Example: change background */
+  color: rgb(7, 7, 7); /* Example: change text color */
+  cursor: pointer;
+  border-color: black;
+  text-align: center;
+  width: 20%;
+  height: 70%;
+}
+
+.last {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+
+  gap: 30px;
+}
+
+.last_button {
+}
+
+.button_last {
+  width: 60%;
+  height: 5vh;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(238, 69, 97);
+}
+
+.button_last1 {
+  margin-top: 20px;
+
+  width: 40%;
+  height: 5vh;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(238, 69, 97);
+}
+
+.abc-1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  border-bottom: 1px solid rgb(223, 208, 208);
+  /* padding: 10px; */
+  padding-bottom: 10px;
+}
+.abc1 {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content:space-between; */
+}
+
+.abc22 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  border-bottom: 1px solid rgb(195, 190, 190);
+  padding-bottom: 10px;
+}
+
+.abc2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: baseline;
+}
+
+.btn-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 30px;
+  margin-bottom: 70px;
+}
+
+input {
+  width: 80%;
+  height: 5vh;
+  font-size: 18px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 3px;
+  border-color: rgb(12, 12, 12);
+  /* border-bottom: 2px solid #eaedf0; Change color on focus */
+
+  font-size: 14px;
+  /* box-sizing: border-box; */
+}

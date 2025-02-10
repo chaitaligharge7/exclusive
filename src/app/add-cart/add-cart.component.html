@@ -1,0 +1,127 @@
+<div class="container">
+  <div class="row first">
+    <div class="col-md-3 column1">Product</div>
+    <div class="col-md-3 column2">Price</div>
+    <div class="col-md-3 column3">Quantity</div>
+    <div class="col-md-3 column4">Subtotal</div>
+  </div>
+
+  <div class="row">
+    <div class="row-main">
+      <div class="row_Sec" *ngFor="let a1 of newArray">
+        <div class="col-md-3 sec_first">
+          <div class="abc">
+            <div class="image-wrapper">
+              <img class="product-image" [src]="a1.thumbnail" />
+            </div>
+            <h6>{{ a1.title }}</h6>
+          </div>
+        </div>
+        <div class="col-md-3 sec_second">
+          <!-- <h6>$650</h6> -->
+          <h6>{{ a1.price }}</h6>
+        </div>
+        <div class="col-md-3">
+          <div class="exe1">
+            <div class="dark-rectangle">
+              <h6>{{ a1.quantity }}</h6>
+              <div class="navigation">
+                <span class="material-icons">expand_less</span>
+                <span class="material-icons">expand_more</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sec-third">
+          <h6>{{ a1.total }}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="row">
+    <div class="row_Sec">
+      <div class="col-md-3 sec_first">
+        <div class="abc">
+          <img src="assets/g92-2-500x500 1.png" />
+          <h6>LCD Monitor</h6>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h6>$550</h6>
+      </div>
+      <div class="col-md-3">
+        <div class="exe1">
+          <div class="dark-rectangle">
+            <h6>02</h6>
+            <div class="navigation">
+              <span class="material-icons">expand_less</span>
+              <span class="material-icons">expand_more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h6>$1100</h6>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="row">
+    <div class="col">
+      <div class="button1">
+        <button class="btn btn-outline-primary" (click)="naviagateTohome()">
+          Return To Shop
+        </button>
+        <button class="btn btn-outline-primary">Update Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5 last">
+      <input type="text" placeholder="Coupen Code" />
+      <!-- <div class="col-md-2"> -->
+      <button class="button_last">Apply Coupen</button>
+    </div>
+    <div class="col-md-2"></div>
+
+    <div class="col-md-5 main-col">
+      <h3>Cart Total</h3>
+
+      <div class="row">
+        <div class="abc-1">
+          <div class="col abc1">
+            <h5>SubTotal:</h5>
+          </div>
+          <div class="col abc2">
+            <h5>678</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+
+      <div class="row abc22">
+        <div class="col">
+          <h5>Shipping:</h5>
+        </div>
+        <div class="col">
+          <h5>Free</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Total:</h5>
+        </div>
+        <div class="col">
+          <h5>670</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn-last">
+          <button class="button_last1">Process To Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

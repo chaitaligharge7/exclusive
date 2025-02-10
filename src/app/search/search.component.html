@@ -1,0 +1,41 @@
+
+<!-- <div *ngFor="let product1 of product">
+
+<h1>{{product1.id}}</h1>
+<h1>{{product1.title}}</h1>
+
+<h1>hii</h1>
+</div> -->
+
+
+
+    <div class="row card-container">
+        <div
+          class="product-card col-md-4"
+          *ngFor="let Products1 of product"
+
+          (click)="goToDetail(Products1.id)"
+
+        >
+          <div class="image-wrapper">
+            <img
+              class="product-image"
+              [src]="Products1.images[0]"
+              [alt]="Products1.title"
+            />
+
+            <i class="favorite-icon fa fa-heart"></i>
+          </div>
+          <div class="card-content">
+            <h4 class="product-title">{{ Products1.title }}</h4>
+            <p class="product-price">Price: ${{ Products1.price }}</p>
+            <!-- <star-rating
+              [value]="rating"
+              [totalstars]="5"
+              [readOnly]="false"
+              (rateChange)="onRateChange($event)"
+            ></star-rating> -->
+          </div>
+        </div>
+    </div>
+

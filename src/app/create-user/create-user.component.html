@@ -1,0 +1,104 @@
+<div class="row main">
+  <div class="col-md-8 left">
+    <img src="assets/first.png" />
+  </div>
+
+  <div class="col-md-4 right">
+    <form [formGroup]="SignUpForm" (ngSubmit)="createUser()">
+      <h2>Create your account</h2>
+
+      <h6>Enter your details below</h6>
+
+      <div>
+        <input
+          type="text"
+          formControlName="firstName"
+          placeholder="firstName"
+        />
+      </div>
+      <div
+        *ngIf="
+          SignUpForm.get('firstName')?.invalid &&
+          SignUpForm.get('firstName')?.touched
+        "
+        class="error"
+      >
+        firstName is required.
+      </div>
+
+      <div>
+        <input type="text" formControlName="lastName" placeholder="lastName" />
+      </div>
+      <div
+        *ngIf="
+          SignUpForm.get('lastName')?.invalid &&
+          SignUpForm.get('lastName')?.touched
+        "
+        class="error"
+      >
+        lastName is required.
+      </div>
+
+      <div>
+        <input type="text" formControlName="username" placeholder="username" />
+      </div>
+      <div
+        *ngIf="
+          SignUpForm.get('username')?.invalid &&
+          SignUpForm.get('username')?.touched
+        "
+        class="error"
+      >
+        username is required.
+      </div>
+
+      <div>
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="password"
+        />
+      </div>
+
+      <div
+        *ngIf="
+          SignUpForm.get('password')?.invalid &&
+          SignUpForm.get('password')?.touched
+        "
+        class="error"
+      >
+        <div *ngIf="SignUpForm.get('password')?.errors?.['required']">
+          Password is required.
+        </div>
+        <div *ngIf="SignUpForm.get('password')?.errors?.['minlength']">
+          Password must be at least 6 characters.
+        </div>
+      </div>
+
+      <div *ngIf="successMessage">
+        <h3>{{ successMessage }}</h3>
+      </div>
+
+      <p *ngIf="errorMessage">{{ errorMessage }}</p>
+
+      <div class="last">
+        <button type="submit" class="btn btn-outline-primary">
+          Create Account</button
+        ><br />
+      </div>
+      <div class="last-2">
+        <button type="submit" class="btn btn-outline-secondary">
+          <!-- <span class="material-icons google-icon">google</span> -->
+          <span class="material-icons">g_translate</span>
+          Sign Up with google
+        </button>
+      </div>
+
+      <div>
+        <a [routerLink]="['/home/login']"
+          >Already have an account? log in here</a
+        >
+      </div>
+    </form>
+  </div>
+</div>

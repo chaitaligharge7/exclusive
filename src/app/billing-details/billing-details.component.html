@@ -1,0 +1,120 @@
+<div class="main-container">
+  <div class="row">
+    <div class="first">
+      <span>Home</span>
+      <span>/</span>
+      <span>My Account</span>
+      <span>/</span>
+      <span>Product</span>
+      <span>/</span>
+      <span>Viewcart</span>
+      <span>/</span>
+      <span class="color-dif">Chcekout</span>
+    </div>
+
+    <!-- <div class="first-part">
+      <h5>Wishlist(4)</h5>
+      <button>Move All To bag</button>
+    </div> -->
+  </div>
+  <h2>Billing Details</h2>
+
+  <div class="row">
+    <div class="col-md-6 col-first">
+      <div class="input-map">
+        <div class="input-map1">
+          <label>First Name</label>
+
+          <input type="text" placeholder="" />
+        </div>
+        <div class="input-map1">
+          <label>Company Name</label>
+
+          <input type="text" placeholder="" />
+        </div>
+        <div class="input-map1">
+          <label>Street Address</label>
+
+          <input type="text" placeholder="" />
+        </div>
+        <div class="input-map1">
+          <label>Apartment,floor,etc</label>
+
+          <input type="text" placeholder="" />
+        </div>
+        <div class="input-map1">
+          <label>Town/city*</label>
+
+          <input type="text" placeholder="" />
+        </div>
+        <div class="input-map1">
+          <label>Phone Number*</label>
+
+          <input type="text" placeholder="" />
+        </div>
+        <div class="input-map1">
+          <label>Email Address*</label>
+
+          <input type="text" placeholder="" />
+        </div>
+        <div class="last-checkbox">
+          <div class="custom-checkbox">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"></label>
+          </div>
+
+          <h6>Save this information for faster check out next time</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 half-part">
+      <div class="first-row" *ngFor="let img of singleArray">
+        <div class="img-title">
+          <img [src]="img" class="product-image" />
+          <h6>{{ product.title }}</h6>
+        </div>
+        <h6>{{ product.price }}</h6>
+      </div>
+
+      <!-- <div class="first-row">
+        <div class="img-title">
+          <img src="assets/Gamepad-Cart-Small.png" />
+          <h6>LCD monitor</h6>
+        </div>
+        <h6>$650</h6>
+      </div> -->
+
+      <div class="first-row">
+        <h6>Subtotal</h6>
+        <h6>{{ product.price }}</h6>
+      </div>
+      <div class="first-row">
+        <h6>Shipping</h6>
+        <h6>$40</h6>
+      </div>
+      <div class="first-row">
+        <h6>Total</h6>
+        <h6>{{ product.price + 40 }}</h6>
+      </div>
+      <div>
+        <div class="abc">
+          <label>
+            <div type="radio" name="singleOption" [(ngModel)]="isSelected"  ></div>
+            Bank
+          </label>
+        </div>
+      </div>
+      <!-- <div class="abc">
+        <div class="circle"></div>
+
+        <h6>Cash On Delivery</h6>
+      </div> -->
+
+      <div class="input-coupen">
+        <input type="text" placeholder="Coupen Code" class="coupeninput" />
+        <button class="btn btn-outline-primary btn-last">Apply Coopen</button>
+      </div>
+      <button class="btn btn-outline-primary btn-last"  (click)="placeOrder()">Place Order</button>
+    </div>
+  </div>
+</div>

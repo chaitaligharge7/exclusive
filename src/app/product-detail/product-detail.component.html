@@ -1,0 +1,131 @@
+<div class="main">
+  <div class="row">
+    <div class="startegy">
+      <span class="color-dif">Account</span>
+      <span class="color-dif">/</span>
+      <span class="color-dif">{{ product.category }}</span>
+      <span class="color-dif">/</span>
+
+      <span class="color-dif1">{{ product.title }}</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor="let img of singleArray">
+        <img [src]="img" class="product-image" [alt]="product.title" />
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div *ngIf="product">
+        <h2>{{ product.title }}</h2>
+        <h2>{{ product.price }}</h2>
+        <p class="bottom1">{{ product.description }}</p>
+      </div>
+      <div class="exe1">
+        <h5>Colours:</h5>
+        <div class="dark-circle1"></div>
+
+        <div class="dark-circle"></div>
+      </div>
+
+      <div class="exe11">
+        <h5>Size</h5>
+
+        <div class="dark-rectangle1">XS</div>
+        <div class="dark-rectangle1">S</div>
+        <div class="dark-rectangle1">M</div>
+        <div class="dark-rectangle1">L</div>
+        <div class="dark-rectangle1">XL</div>
+      </div>
+
+      <div class="row">
+        <div class="controlline">
+          <div class="exe456">
+            <div class="col-md-3 control-item">-</div>
+            <div class="col-md-6 control-item">2</div>
+            <div class="col-md-3 control-item1">+</div>
+          </div>
+
+          <div class="col-md-3 last_one">
+            <button
+              (click)="goToBilling(product.id)"
+              class="btn btn-outline-primary button"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div class="col-md-3 control-item44">
+            <img src="assets/Vector1.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="row custom-row">
+          <div class="first_rack">
+            <div class="col-md-2 icon-first">
+              <img src="assets/icon-del.png" />
+            </div>
+
+            <div class="col-md-10">
+              <h6>Free Delivery</h6>
+              <h6>Enter your postal code for delivery</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row custom-row">
+          <div class="first_rack">
+            <div class="col-md-2 icon-first">
+              <img src="assets/Icon-ret.png" />
+            </div>
+
+            <div class="col-md-10">
+              <h6>Return Delivery</h6>
+              <h6>Free return deliver details here</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="exe1">
+        <div class="dark-rectangle"></div>
+
+        <h4>Related Item</h4>
+      </div>
+
+      <div class="row card-container">
+        <div
+          class="product-card col-md-4"
+          *ngFor="let AllProducts1 of VisibleArray"
+          (click)="goToDetail(AllProducts1.id)"
+        >
+          <div class="image-wrapper">
+            <img
+              class="product-image"
+              [src]="AllProducts1.images[0]"
+              [alt]="AllProducts1.title"
+            />
+
+            <i class="favorite-icon fa fa-heart"></i>
+          </div>
+          <div class="card-content">
+            <h4 class="product-title">{{ AllProducts1.title }}</h4>
+            <p class="product-price">Price: ${{ AllProducts1.price }}</p>
+            <star-rating
+              [value]="rating"
+              [totalstars]="5"
+              [readOnly]="false"
+              (rateChange)="onRateChange($event)"
+            ></star-rating>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

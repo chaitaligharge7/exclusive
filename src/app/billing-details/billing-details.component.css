@@ -1,0 +1,181 @@
+.first-part{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: last baseline;
+}
+
+.input-map{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.col-first{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-map1{
+    display: flex;
+    flex-direction: column;
+}
+input {
+    background-color: rgb(237, 241, 243);
+    height: 6vh;
+    border: none;
+    width: 60vh;
+    padding-left: 12px;
+    border-radius: 5px;
+  }
+
+  .coupeninput{
+    color: blue;
+    width: 34vh;
+
+
+
+  }
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding: 130px;
+  }
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Custom checkbox styling */
+  .custom-checkbox label {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(233, 52, 83);
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Add the white tick when checked */
+  .custom-checkbox input[type="checkbox"]:checked + label::after {
+    content: "✔";
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .last-checkbox{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+  }
+  
+
+  .img-title{
+    display: flex;
+    flex-direction:row;
+    gap:20px;
+    align-items: center;
+    justify-content: first baseline;
+
+
+  }
+
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+.abc{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:10px;
+}
+  .circle {
+    width: 16px;           /* Width of the circle */
+    height: 16px;          /* Height of the circle */
+    background-color: rgb(248, 244, 245); /* Circle color */
+    border: 2px solid black; /* Border color */
+    border-radius: 50%;     /* Makes it circular */
+  }
+  
+  .half-part{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+
+
+  }
+  .btn-last {
+    font-weight: bold;
+    width: 25%;
+    height: 6vh;
+    border-radius: 20px;
+  }
+  .btn-last1 {
+    background-color: white;
+    border: none;
+  }
+  .input-coupen{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+  }
+  
+  .btn.btn-outline-primary {
+    border-radius: 6px; /* Example: custom border radius */
+    background-color: rgb(230, 9, 83); /* Example: change background */
+    color: white; /* Example: change text color */
+    cursor: pointer;
+  }
+
+
+  .product-image {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    background-color: rgb(243, 244, 247);
+  }
+
+ 
+
+
+  .in-radio[type='radio'] {
+    margin-right: 10px;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items:flex-start; */
+
+
+  }
+
+
+  label {
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  input[type="radio"] {
+    accent-color: #007bff; /* Change the color of the radio button */
+  }
+  

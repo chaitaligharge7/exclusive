@@ -1,0 +1,115 @@
+<div class="row">
+  <div class="col first_row">
+    <h6>
+      Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+      ShopNow
+    </h6>
+    <div class="dropdown-container">
+      <label for="options">English</label>
+      <select id="options" name="options">
+        <option value="english" selected>English</option>
+
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+    </div>
+  </div>
+</div>
+<!-- 
+<div class="d-flex justify-content-around">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div> -->
+
+<div class="row main-sec-first">
+  <div class="col main-sec d-flex justify-content-around">
+    <h3><b>Exclusive</b></h3>
+    <div>
+      <ul class="sec_part">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/home/about">About</a></li>
+
+        <li><a routerLink="/home/contact">Contact</a></li>
+
+        <li><a routerLink="/home/create-user">Sign Up</a></li>
+      </ul>
+    </div>
+    <div class="input-search">
+      <input
+        type="text"
+        placeholder="What are you looking for"
+        [(ngModel)]="searchitem"
+      />
+      <span class="material-icons search-icon" (click)="OnClick()">search</span>
+    </div>
+    <div class="icons">
+      <!-- Heart Icon -->
+      <span class="material-icons heart-icon" routerLink="/home/wishlist">favorite</span>
+
+      <!-- Add to Cart Icon -->
+      <span class="material-icons cart-icon" routerLink="/home/addcart">shopping_cart</span>
+
+      <!-- My Account Icon -->
+      <span class="material-icons"routerLink="/home/myaccount"  >account_circle</span>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="row main_last">
+  <div class="col-md-3">
+    <ul class="last_list">
+      <p><b>Exclusive</b></p>
+      <li><a routerLink="/">Subscribe</a></li>
+
+      <li><a routerLink="/">Get 10% off for your first order</a></li>
+      <input class="input-search" type="text" placeholder="Enter your email" />
+    </ul>
+  </div>
+  <div class="col-md-3">
+    <ul class="last_list">
+      <p><b>Account</b></p>
+      <li><a routerLink="/">My Account</a></li>
+
+      <li><a routerLink="/">Login or Register</a></li>
+      <li><a routerLink="/">Cart</a></li>
+
+      <li><a routerLink="/">Wishlist</a></li>
+      <li><a routerLink="/">Shop</a></li>
+    </ul>
+  </div>
+  <div class="col-md-3">
+    <ul class="last_list">
+      <p><b>Quick Link</b></p>
+      <li><a routerLink="/">Privacy policy</a></li>
+
+      <li><a routerLink="/">Terms of use</a></li>
+      <li><a routerLink="/">Cart</a></li>
+
+      <li><a routerLink="/">FAQ</a></li>
+      <li><a routerLink="/">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="col-md-3">
+    <ul class="last_list">
+      <p><b>Download App</b></p>
+
+      <p>Save $3 with app new user only</p>
+      <li>
+        <a routerLink="/">
+          <img src="" />
+        </a>
+      </li>
+
+      <li><a routerLink="/">FAQ</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col fifth_row">© Copyright remel 2022 All right reserved</div>
+</div>

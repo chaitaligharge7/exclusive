@@ -1,0 +1,255 @@
+<div class="row main">
+  <div class="col-md-3 left">
+    <!-- <div class="left"> -->
+    <ul>
+      <li *ngFor="let array1 of productCategoryArray"
+
+      (click)="goToCategoryProducts(array1.name)"
+      >
+        <a>{{ array1.name }}</a>
+      </li>
+      <!-- <li><a>Mens Fashion</a></li>
+
+      <li><a>Electronics</a></li>
+
+      <li><a>Home & Lifestyle</a></li>
+
+      <li><a>Medicine</a></li>
+
+      <li><a>Sports & Outdoor</a></li>
+
+      <li><a>Baby's & Toys</a></li>
+
+      <li><a>Groceries & Pets</a></li>
+      <li><a>Health & Beauty</a></li> -->
+    </ul>
+    <!-- </div> -->
+  </div>
+
+  <div class="col-md-9 right">
+    <img class="img1" src="assets/sec.png" />
+  </div>
+</div>
+
+<div class="container">
+  <div class="exe1">
+    <div class="dark-rectangle"></div>
+
+    <h5>Todays</h5>
+  </div>
+
+  <h3>Flash Sales</h3>
+
+  <div class="row card-container">
+    <div
+      class="product-card col-md-4"
+      *ngFor="let AllProducts1 of VisibleArray"
+      (click)="viewProductDetail(AllProducts1.id)"
+    >
+      <div class="image-wrapper">
+        <img
+          class="product-image"
+          [src]="AllProducts1.images[0]"
+          [alt]="AllProducts1.title"
+        />
+
+        <i class="favorite-icon fa fa-heart"></i>
+      </div>
+      <div class="card-content">
+        <h4 class="product-title">{{ AllProducts1.title }}</h4>
+        <p class="product-price">Price: ${{ AllProducts1.price }}</p>
+        <star-rating
+          [value]="rating"
+          [totalstars]="5"
+          [readOnly]="false"
+          (rateChange)="onRateChange($event)"
+        ></star-rating>
+        <button
+          class="add-to-cart-button"
+          (click)="addToCart(AllProducts1.id, 1)"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <button
+      class="add-to-cart-button"
+      (click)="addToCart(AllProducts1.id, 1)"
+    >
+      Add to Cart
+    </button>
+    </div>
+  </div>
+
+  <div class="row last">
+    <button class="btn btn-outline-primary button" (click)="showAllProducts()">
+      View All Products
+    </button>
+  </div>
+</div>
+
+<div class="last-main">
+  <div class="row">
+    <div class="exe1">
+      <div class="dark-rectangle"></div>
+
+      <h5>Categores</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="exe">
+      <h3>Browse By Category</h3>
+
+      <div class="navigation">
+        <span class="material-icons">chevron_left</span>
+        <span class="material-icons">chevron_right</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col boxer">
+      <div class="card">
+        <img src="assets/CellPhone.png" />
+        <h6>Phones</h6>
+      </div>
+
+      <div class="card">
+        <img src="assets/Computer.png" />
+
+        <h6>Computers</h6>
+      </div>
+
+      <div class="card">
+        <img src="assets/SmartWatch.png" />
+        <h6>Smartwatch</h6>
+      </div>
+
+      <div class="card camera">
+        <img src="assets/Camera.png" />
+
+        <h6>Camera</h6>
+      </div>
+
+      <div class="card">
+        <img src="assets/Headpho.png" />
+
+        <h6>Headphones</h6>
+      </div>
+
+      <div class="card">
+        <img src="assets/Category-Gamepad.png" />
+
+        <h6>Gmaing</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- //fourth section -->
+<div class="container">
+  <div class="exe1">
+    <div class="dark-rectangle"></div>
+
+    <h5>This Month</h5>
+  </div>
+
+  <div class="exe2">
+    <h3>Best Selling Products</h3>
+    <button class="btn btn-outline-primary button" (click)="showAllProducts()">
+      View All Products
+    </button>
+  </div>
+
+  <div class="row card-container">
+    <div
+      class="product-card col-md-4"
+      *ngFor="let AllProducts1 of visibleNextArray"
+    >
+      <div class="image-wrapper">
+        <img
+          class="product-image"
+          [src]="AllProducts1.images[0]"
+          [alt]="AllProducts1.title"
+        />
+
+        <i class="favorite-icon fa fa-heart"></i>
+      </div>
+      <div class="card-content">
+        <h4 class="product-title">{{ AllProducts1.title }}</h4>
+        <p class="product-price">Price: ${{ AllProducts1.price }}</p>
+        <star-rating
+          [value]="rating"
+          [totalstars]="5"
+          [readOnly]="false"
+          (rateChange)="onRateChange($event)"
+        ></star-rating>
+      </div>
+    </div>
+  </div>
+
+  <img class="frame" src="assets/Frame.png" />
+</div>
+
+<!-- //fifth section -->
+<div class="container">
+  <div class="exe1">
+    <div class="dark-rectangle"></div>
+
+    <h5>Our Products</h5>
+  </div>
+
+  <div class="exe2">
+    <h3>Explore Our Products</h3>
+
+    <div class="navigation">
+      <span class="material-icons">chevron_left</span>
+      <span class="material-icons">chevron_right</span>
+    </div>
+  </div>
+
+  <div class="row card-container">
+    <div
+      class="product-card col-md-4"
+      *ngFor="let AllProducts1 of visibleNextArray1"
+    >
+      <div class="image-wrapper">
+        <img
+          class="product-image"
+          [src]="AllProducts1.images[0]"
+          [alt]="AllProducts1.title"
+        />
+
+        <i class="favorite-icon fa fa-heart"></i>
+      </div>
+      <div class="card-content">
+        <h4 class="product-title">{{ AllProducts1.title }}</h4>
+        <p class="product-price">Price: ${{ AllProducts1.price }}</p>
+        <star-rating
+          [value]="rating"
+          [totalstars]="5"
+          [readOnly]="false"
+          (rateChange)="onRateChange($event)"
+        ></star-rating>
+      </div>
+    </div>
+  </div>
+  <div class="row last">
+    <button class="btn btn-outline-primary button" (click)="showAllProducts()">
+      View All Products
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="exe1">
+    <div class="dark-rectangle"></div>
+
+    <h5>Featured</h5>
+  </div>
+
+  <h3>New Arrival</h3>
+
+  <img class="frame" src="assets/Frame -77.png" />
+
+  <img class="frame1" src="assets/Frame-88.png" />
+</div>

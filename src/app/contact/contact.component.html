@@ -1,0 +1,59 @@
+<div class="main">
+  <div class="row">
+    <div class="startegy">
+      <span class="color-dif">Home</span>
+      <span class="color-dif">/</span>
+      <span class="color-dif">contact</span>
+      <span class="color-dif">/</span>
+    </div>
+  </div>
+
+  <div class="row sec2">
+    <div class="col-md-3 part-1">
+      <div class="first">
+        <div class="icons">
+          <img src="assets\icons-phon.png" />
+          <h5>Call to us</h5>
+        </div>
+
+        <h6>We are avaialabe 24/7,7 days a week</h6>
+        <h6>Phone:+9789788900</h6>
+      </div>
+      <div class="first">
+        <div class="icons">
+          <img src="assets\mail.png" />
+          <h5>Write to us</h5>
+        </div>
+
+        <h6>Fill out our form and we will contact you within next 24 hours</h6>
+        <h6>Emails:customer&#64;exclusive.com</h6>
+        <h6>Emails: Support&#64;exclusive.com</h6>
+      </div>
+    </div>
+    <div class="col-md-9 part-2">
+      <div class="row1">
+        <div class="first_part">
+          <input class="first-input" type="text" placeholder="Your Name*" />
+
+          <input class="first-input" type="text" placeholder="Your Email*" />
+
+          <input class="first-input" type="text" placeholder="Your Phone*" />
+        </div>
+
+        <div class="sec_part">
+          <input
+            class="message-input"
+            type="text"
+            placeholder="Your Message*"
+
+            [(ngModel)]="body"
+          />
+        </div>
+
+        <div class="third_part">
+          <button class="btn-last"  (click)="sendMessage(body,postID,userID)">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+.second {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-right: 40px;
+}
+
+.first-input {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.sec_first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: space-around; */
+  width: 800px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.first-in {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.first-input1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sec_sec {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* width: 100%; */
+  /* padding: 60px; */
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  box-shadow: 0 2px 2px rgba(113, 110, 110, 0.3);
+}
+.list-none {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.main-container {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
+}
+h3{
+  color: rgb(231, 79, 79);
+}
+h4{
+  font-weight:normal;
+  color: rgb(231, 79, 79);
+}
+
+input {
+  background-color: rgb(237, 241, 243);
+  height: 6vh;
+  border: none;
+  width: 60vh;
+  padding-left: 12px;
+  border-radius: 5px;
+}
+.Ainputlign {
+  background-color: rgb(75, 200, 200);
+  border: none;
+  /* height: 50vh; */
+
+  /* /*height: 7vh; */
+  padding-left: 12px;
+
+  /* height: 12vh; */
+  /* width: 70vh; */
+}
+
+.last-input {
+  width: 100%;
+}
+
+.last-btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.btn-last {
+  width: 20%;
+  height: 6vh;
+  border-radius: 20px;
+}
+.btn-last1 {
+  background-color: white;
+  border: none;
+}
+
+.btn.btn-outline-primary {
+  border-radius: 6px; /* Example: custom border radius */
+  background-color: rgb(230, 9, 83); /* Example: change background */
+  color: white; /* Example: change text color */
+  cursor: pointer;
+}

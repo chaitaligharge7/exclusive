@@ -1,0 +1,28 @@
+<div class="main-container">
+  <div class="first">
+    <h2>{{categoryName|titlecase}}</h2>
+  </div>
+  <div class="sec">
+    <div class="row">
+
+      
+      <div class="card-container">
+        <div class="product-card col-md-3" *ngFor="let a1 of CategoryArray"
+
+        (click)="GoToDetails(a1.id)"
+        
+        >
+          <!-- <div class="image-wrapper"> -->
+            <img class="product-image" [src]="a1.thumbnail" [alt]="a1.title" />
+
+            <!-- <i class="favorite-icon fa fa-heart"></i>
+          </div>
+          <div class="card-content"> -->
+            <h4 class="product-title">{{ a1.title }}</h4>
+            <p class="product-price">Price: ${{ a1.price }}</p>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

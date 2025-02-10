@@ -1,0 +1,36 @@
+.sec{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap:170px;
+}
+
+.color-dif{
+    font-weight: bold;
+
+}
+.main-container{
+    padding: 70px;
+}
+.btn-last {
+    width: 15%;
+    height: 5vh;
+    border-radius: 20px;
+  }
+  .btn-last1 {
+    background-color: white;
+    border: none;
+  }
+  
+  .btn.btn-outline-primary {
+    border-radius: 6px; /* Example: custom border radius */
+    background-color: rgb(230, 9, 83); /* Example: change background */
+    color: white; /* Example: change text color */
+    cursor: pointer;
+  }

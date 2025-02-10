@@ -1,0 +1,64 @@
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #eaedf0; /* Change color on focus */
+
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+}
+
+.btn.btn-outline-primary {
+  border-radius: 2px; /* Example: custom border radius */
+  background-color: rgb(230, 9, 83); /* Example: change background */
+  color: white; /* Example: change text color */
+}
+
+.btn.btn-outline-secondary {
+  border-radius: 2px; /* Example: custom border radius */
+  background-color: rgb(246, 239, 241); /* Example: change background */
+  color: rgb(9, 9, 9); /* Example: change text color */
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right .last {
+  display: flex;
+  margin-bottom: 10px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.right .last-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+
+  width: auto;
+  margin-bottom: 20px;
+}
+.google-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  font-size: 20px; /* Adjust icon size if needed */
+}
+
+.main {
+  /* margin-top: 30px; */
+  /* height: 20px; */
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
