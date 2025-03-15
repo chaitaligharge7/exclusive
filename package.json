@@ -40,7 +40,8 @@
   },
   "overrides": {
     "ngx-star-rating": {
-      "@angular/common": "^18.2.0"
+      "@angular/core": "^18.2.13",
+      "@angular/common": "^18.2.13"
     }
   }
 }
